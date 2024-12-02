@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Cover from "@/components/Cover";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   const [showCover, setShowCover] = useState(true);
@@ -22,25 +23,24 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="relative flex justify-center items-center flex-col mx-auto bg-black h-screen overflow-hidden">
-      <AnimatePresence>
-        {showCover && (
-          <motion.section
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black"
-            initial={{ opacity: 1 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 2 }}
-          >
-            <Cover />
-          </motion.section>
-        )}
-      </AnimatePresence>
-
-      <section className={`relative w-full h-full ${showCover ? "hidden" : "block"}`}>
-        <div className="section hero h-screen flex items-center justify-center animate-fadeIn_long">
-          <h1 className="text-white">Hello world</h1>
-        </div>
+    <main className="relative flex justify-center items-center flex-col mx-auto bg-black">
+      <section className="section cover">
+        <AnimatePresence>
+          {showCover && (
+            <motion.section
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black"
+              initial={{ opacity: 1 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 2 }}
+            >
+              <Cover />
+            </motion.section>
+          )}
+        </AnimatePresence>
+      </section>
+      <section className={`section hero ${showCover ? "hidden" : "block"}`}>
+          <Hero/>
       </section>
     </main>
   );

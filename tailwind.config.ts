@@ -30,6 +30,11 @@ export default {
           DEFAULT: '#000'
         },
       },
+
+      fontFamily: {
+        roobert: ['Roobert', 'sans-serif'],
+      },
+
     },
   },
   plugins: [addVariablesForColors],

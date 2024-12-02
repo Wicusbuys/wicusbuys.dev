@@ -2,22 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Roobert-Medium';
-  src: url('/fonts/Roobert-Medium') format('woff2'),
-       url('/fonts/Roobert-Medium') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roobert-Medium';
-  src: url('/fonts/Roobert-Medium') format('woff2'),
-       url('/fonts/Roobert-Medium') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-
 body {
-  font-family: 'Roobert-Medium', sans-serif;
+  font-family: 'Roobert', sans-serif;
+}
+
+.option {
+  color: #505050;
+  cursor: pointer;
+}
+
+.option:hover {
+  color: #ffffff;
+}
+
+.is--active {
+  color: #ffffff;
+}
+
+.text{
+  display: none;
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.is--visible{
+  display: inherit;
 }
