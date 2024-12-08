@@ -28,3 +28,46 @@ body {
 .is--visible{
   display: inherit;
 }
+
+nav {
+  top: 0px;
+  z-index: 1;
+  position: fixed;
+}
+
+.nav-item{
+  color: #505050;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: #ffffff;
+}
+
+.nav-button{
+  margin: auto;
+  background: linear-gradient(to right, #4B23FF, #A100FF);
+  padding: 0.20rem 0.75rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.icon {
+  fill: #505050;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  fill: #FFFFFF;
+}
+
+.sidebar {
+  width: 0.3rem;
+  height: 10rem;
+  background: linear-gradient(to right, #4B23FF, #A100FF);
+  margin: auto;
+}

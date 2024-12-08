@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 
 const Hero = () => {
-  const [activeOption, setActiveOption] = useState('anyone'); // Default visible text
+  const [activeOption, setActiveOption] = useState('anyone');
 
   return (
     <div className="h-screen bg-black text-white flex flex-col items-center justify-center overflow-hidden animate-fadeIn_long max-w-3xl">
       <div>
-        {/* Options */}
         <ul className="options flex space-x-6 mb-2">
           <li
             className={`option anyone ${activeOption === 'anyone' ? 'is--active' : ''}`}
