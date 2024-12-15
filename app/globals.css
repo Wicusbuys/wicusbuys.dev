@@ -66,6 +66,7 @@ nav {
 }
 
 .sidebar {
+  bottom: auto;
   width: 0.3rem;
   height: 10rem;
   background: linear-gradient(to right, #4B23FF, #A100FF);

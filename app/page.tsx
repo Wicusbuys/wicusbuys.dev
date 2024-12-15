@@ -6,6 +6,8 @@ import Cover from "@/components/Cover";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
+import { BentoGrid } from "@/components/ui/bento-grid";
+import Work from "@/components/Work";
 
 export default function Home() {
   const [showCover, setShowCover] = useState(true);
@@ -46,6 +48,9 @@ export default function Home() {
       </section>
       <section className={`section hero ${showCover ? "hidden" : "block"}`}>
           <Hero/>
+      </section>
+      <section className="Work">
+          <Work />
       </section>
       <Sidebar />
     </main>

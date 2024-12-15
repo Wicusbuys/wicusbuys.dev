@@ -29,6 +29,11 @@ export default {
         black: {
           DEFAULT: '#000'
         },
+
+        secondary: {
+          DEFAULT: '#505050',
+          light: '#8f8f8f'
+        },
       },
 
       fontFamily: {
