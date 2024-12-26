@@ -8,6 +8,8 @@ import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 import { BentoGrid } from "@/components/ui/bento-grid";
 import Work from "@/components/Work";
+import About from "@/components/About";
+import Timeline from "@/components/TimeLine";
 
 export default function Home() {
   const [showCover, setShowCover] = useState(true);
@@ -51,6 +53,12 @@ export default function Home() {
       </section>
       <section className="Work">
           <Work />
+      </section>
+      <section className="About">
+          <About/>
+      </section>
+      <section className="Education-Work">
+        <Timeline/>
       </section>
       <Sidebar />
     </main>

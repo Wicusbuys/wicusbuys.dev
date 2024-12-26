@@ -4,12 +4,12 @@ import { SparklesCore } from './ui/sparkles'
 const Cover = () => {
   return (
     <div className="h-screen bg-black flex flex-col items-center justify-center overflow-hidden rounded-md m-auto">
-        <h1 className="text-7xl font-bold text-center text-white relative z-20 mb-2">
+        <h1 className="text-9xl font-bold text-center text-white relative z-20 mb-2">
             <span className='animate-fadeIn'>
                 Wicus Buys
             </span>
         </h1>
-        <h2 className='text-3xl text-center text-white relative z-20'>
+        <h2 className='text-5xl text-center text-white relative z-20'>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A100FF] to-[#4B23FF] animate-fadeIn">
                 &lt; Software Developer /&gt;
             </span>

@@ -4,7 +4,7 @@ import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid"
 
 const Work = () => {
   return (
-    <BentoGrid className="max-w-7xl mx-auto md:auto-rows-auto h-full pt-12 mb-12">
+    <BentoGrid className="max-w-7xl mx-auto md:auto-rows-auto h-full pt-12 mb-48">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}

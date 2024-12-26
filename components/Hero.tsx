@@ -4,7 +4,7 @@ const Hero = () => {
   const [activeOption, setActiveOption] = useState('anyone');
 
   return (
-    <div className="h-screen bg-black text-white flex flex-col items-center justify-center overflow-hidden animate-fadeIn_long max-w-3xl">
+    <div className="h-screen bg-black text-white flex flex-col items-center justify-center overflow-hidden animate-fadeIn_long max-w-5xl">
       <div>
         <ul className="options flex space-x-6 mb-2">
           <li
