@@ -18,11 +18,17 @@ export default {
           '0%' : { opacity: '0'},
           '100%' : {opacity: '100'},
         },
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
       },
       
       animation: {
         fadeIn: 'fadeIn 1.5s ease-in forwards',
         fadeIn_long:'fadeIn 2.5s ease-in forwards',
+        scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
       },
 
       colors: {

@@ -6,10 +6,11 @@ import Cover from "@/components/Cover";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
-import { BentoGrid } from "@/components/ui/bento-grid";
 import Work from "@/components/Work";
 import About from "@/components/About";
 import Timeline from "@/components/TimeLine";
+import Testimonials from "@/components/Testimonials";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [showCover, setShowCover] = useState(true);
@@ -60,6 +61,12 @@ export default function Home() {
       <section className="Education-Work">
         <Timeline/>
       </section>
+      <section className="Testimonials">
+          <Testimonials/>
+      </section>
+      <footer>
+        <Footer/>
+      </footer>
       <Sidebar />
     </main>
   );
