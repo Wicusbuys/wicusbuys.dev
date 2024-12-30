@@ -50,24 +50,24 @@ export default function Home() {
         </AnimatePresence>
       </section>
       <section className={`section hero ${showCover ? "hidden" : "block"}`}>
-          <Hero/>
+          {/* <Hero/> */}
       </section>
       <section className="Work">
-          <Work />
+          {/* <Work /> */}
       </section>
       <section className="About">
-          <About/>
+          {/* <About/> */}
       </section>
       <section className="Education-Work">
-        <Timeline/>
+        {/* <Timeline/> */}
       </section>
       <section className="Testimonials">
-          <Testimonials/>
+          {/* <Testimonials/> */}
       </section>
-      <footer>
-        <Footer/>
-      </footer>
-      <Sidebar />
+      <section>
+        {/* <Footer/> */}
+      </section>
+      {/* <Sidebar /> */}
     </main>
   );
 }

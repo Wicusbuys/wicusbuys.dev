@@ -13,6 +13,11 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+
+      screens: {
+        custom: "1100px",
+      },
+
       keyframes: {
         fadeIn: {
           '0%' : { opacity: '0'},

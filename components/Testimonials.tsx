@@ -15,10 +15,13 @@ const Testimonials = () => {
           title: "Senior Offsite Consultant",
         },
         {
-          quote:
-            "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-          name: "William Shakespeare",
-          title: "Hamlet",
+          quote:`
+            "I haven't known Num-Nums (Wicus) for long time ,but I can safely say he is one of the most dedicated, goal driven, supportive 
+            and positive people I have ever met (this is both professionally and outside of work). Let alone being friendly and 
+            always willing to help in any way possible. Good at giving advice too, I mean both on a personal level and professional 
+            level. If one would need a wingman, I'd recommend Num-Nums."`,
+          name: "Ash Morrison",
+          title: "Senior Offsite Consultant",
         },
         {
           quote: "All that we see or seem is but a dream within a dream.",
