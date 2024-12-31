@@ -4,9 +4,9 @@ const Hero = () => {
   const [activeOption, setActiveOption] = useState('anyone');
 
   return (
-    <div className="h-screen bg-black text-white flex flex-col items-center justify-center overflow-hidden animate-fadeIn_long max-w-5xl">
-      <div>
-        <ul className="options flex space-x-6 mb-2">
+    <div className="hero h-screen w-full bg-black text-white flex flex-col items-center justify-center overflow-hidden animate-fadeIn_long max-w-5xl">
+      <div className='flex flex-col overflow-hidden justify-center min-h-80 px-8'>
+        <ul className="options flex h-auto mb-4">
           <li
             className={`option anyone ${activeOption === 'anyone' ? 'is--active' : ''}`}
             onClick={() => setActiveOption('anyone')}

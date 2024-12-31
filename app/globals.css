@@ -7,7 +7,8 @@ body {
 }
 
 .option {
-  font-size: 1.5rem;
+  padding-right: 1rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   color: #505050;
   cursor: pointer;
 }
@@ -22,7 +23,8 @@ body {
 
 .text{
   display: none;
-  font-size: 5rem;
+  min-height: calc(1em * 1 * 7);
+  font-size: clamp(1.8rem, 5vw, 5rem);
   line-height: 1;
 }
 
@@ -30,13 +32,24 @@ body {
   display: inherit;
 }
 
+@media screen and (min-width: 1024px){
+  .option {
+    padding-right: 2rem;
+  }
+
+}
+
 .nav{
   background: black;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   min-height: 68px;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
 }
 
 .nav-name{
