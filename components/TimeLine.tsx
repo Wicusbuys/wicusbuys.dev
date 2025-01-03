@@ -31,7 +31,7 @@ const TimeLine = () => {
           recognized by my peers as MVP and nominated for the Customer Satisfaction Award—acknowledgments that 
           reflect my commitment to excellence and the value I aim to bring to every interaction.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <a href="https://greatsoft.co.za/" target="_blank" rel="noopener noreferrer">
               <Image
                   src="/images/GS.png"
@@ -70,7 +70,7 @@ const TimeLine = () => {
           technical expertise but also nurtured essential problem-solving and teamwork skills, which I bring into every 
           project I work on.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <a href="/images/WJ_Buys_BSc_Cert.png" target="_blank" rel="noopener noreferrer">
               <Image
                   src="/images/WJ_Buys_BSc_Cert.png"
@@ -107,7 +107,7 @@ const TimeLine = () => {
           remote studies taught me the importance of resilience and self-discipline, helping me stay on track despite the challenges. 
           My hard work paid off as I graduated Magna Cum Laude, a testament to my commitment and passion for software development.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <a href="/images/WJ_Buys_HCert_Cert.png" target="_blank" rel="noopener noreferrer">
               <Image
                   src="/images/WJ_Buys_HCert_Cert.png"

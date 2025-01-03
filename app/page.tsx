@@ -59,7 +59,7 @@ export default function Home() {
           <About/>
       </section>
       <section className="Education-Work">
-        {/* <Timeline/> */}
+        <Timeline/>
       </section>
       <section className="Testimonials">
           {/* <Testimonials/> */}

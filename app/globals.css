@@ -48,7 +48,7 @@ body {
   align-items: center;
   min-height: 68px;
   position: fixed;
-  z-index: 10;
+  z-index: 20;
   top: 0px;
 }
 
