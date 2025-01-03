@@ -6,7 +6,7 @@ import Cover from "@/components/Cover";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
-import Work from "@/components/Work";
+import Work from "@/components/Projects";
 import About from "@/components/About";
 import Timeline from "@/components/TimeLine";
 import Testimonials from "@/components/Testimonials";
@@ -53,7 +53,7 @@ export default function Home() {
           <Hero/>
       </section>
       <section className="Work">
-          {/* <Work /> */}
+          <Work />
       </section>
       <section className="About">
           {/* <About/> */}
