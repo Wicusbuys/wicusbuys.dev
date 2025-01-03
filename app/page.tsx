@@ -56,7 +56,7 @@ export default function Home() {
           <Work />
       </section>
       <section className="About">
-          {/* <About/> */}
+          <About/>
       </section>
       <section className="Education-Work">
         {/* <Timeline/> */}
