@@ -12,7 +12,7 @@ const Testimonials = () => {
             team. Keep up the good work!\"
             `,
           name: "Zander Van Schalkwyk",
-          title: "Senior Offsite Consultant",
+          title: "Senior Offsite Consultant, GreatSoft",
         },
         {
           quote:`
@@ -21,34 +21,28 @@ const Testimonials = () => {
             always willing to help in any way possible. Good at giving advice too, I mean both on a personal level and professional 
             level. If one would need a wingman, I'd recommend Num-Nums."`,
           name: "Ash Morrison",
-          title: "Senior Offsite Consultant",
-        },
-        {
-          quote: "All that we see or seem is but a dream within a dream.",
-          name: "Edgar Allan Poe",
-          title: "A Dream Within a Dream",
+          title: "Senior Offsite Consultant, GreatSoft",
         },
         {
           quote:
-            "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-          name: "Jane Austen",
-          title: "Pride and Prejudice",
-        },
-        {
-          quote:
-            "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-          name: "Herman Melville",
-          title: "Moby-Dick",
+          `"Wicus joined our team and made an immediate and significant impact from day one. His ability to quickly understand and address 
+          complex client issues is exceptional. In less than a year on the support team, Wicus has consistently stood out, earning high 
+          praise from the clients he has assisted. His dedication not only strengthens the support team but also enhances our brand's 
+          reputation, ensuring we remain ahead of the curve and maintain a positive image in the market. Wicus’s eagerness to learn and his 
+          strong ambitions to transition into development are truly commendable. I am confident that his contributions will continue to have a 
+          lasting positive impact on the GreatSoft Team."`,
+          name: "Adrian Dunbar",
+          title: "Head of Development and Director, GreatSoft Europe",
         },
       ];
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-black bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
-    </div>
+      <div className="h-[60rem] rounded-md flex flex-col antialiased bg-black bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="normal"
+        />
+      </div>
   )
 }
 

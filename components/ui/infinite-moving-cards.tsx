@@ -65,7 +65,7 @@ export const InfiniteMovingCards = ({
       } else if (speed === "normal") {
         containerRef.current.style.setProperty("--animation-duration", "40s");
       } else {
-        containerRef.current.style.setProperty("--animation-duration", "100s");
+        containerRef.current.style.setProperty("--animation-duration", "80s");
       }
     }
   };
@@ -90,7 +90,7 @@ export const InfiniteMovingCards = ({
             className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
             style={{
               background:
-                "linear-gradient(to right, #4B23FF, #A100FF)",
+                "linear-gradient(180deg, #4B23FF, #A100FF",
             }}
             key={item.name}
           >
@@ -99,15 +99,15 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className=" relative z-20 text-lg leading-[1.6] text-white font-normal">
+              <span className=" relative z-20 text-base leading-[1.6] text-white font-normal">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  <span className=" text-lg leading-[1.6] text-gray-200 font-normal">
+                  <span className=" text-base leading-[1.6] text-gray-200 font-normal">
                     {item.name}
                   </span>
-                  <span className=" text-lg leading-[1.6] text-gray-200 font-normal">
+                  <span className=" text-base leading-[1.6] text-gray-200 font-normal">
                     {item.title}
                   </span>
                 </span>

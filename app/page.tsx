@@ -61,11 +61,11 @@ export default function Home() {
       <section className="Education-Work">
         <Timeline/>
       </section>
-      <section className="Testimonials">
-          {/* <Testimonials/> */}
+      <section className="Testimonials w-full">
+          <Testimonials/>
       </section>
       <section>
-        {/* <Footer/> */}
+        <Footer/>
       </section>
       {/* <Sidebar /> */}
     </main>
