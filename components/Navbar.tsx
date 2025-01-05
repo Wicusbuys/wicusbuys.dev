@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <nav className={`nav ${isMenuVisible ? "mobile--nav--is--visible" : ""}`}>
-      <h1 className="nav-name">Wicus Buys</h1>
+      <a href="/" className="nav-name">Wicus Buys</a>
       <div className="nav-menu-icon" onClick={toggleMenu}>
         <div className="line">
           <div className="content"></div>
@@ -44,12 +44,12 @@ const Navbar = () => {
         </div>
       </div>
       <ul className="nav-menu" ref={menuRef}>
-        <li className="nav-item"><a>Intro</a></li>
-        <li className="nav-item"><a>Projects</a></li>
-        <li className="nav-item"><a>About</a></li>
-        <li className="nav-item"><a>Timeline</a></li>
-        <li className="nav-item"><a>Testimonials</a></li>
-        <li className="nav-button"><a>Resume</a></li>
+        <li className="nav-item"><a href="#intro">Intro</a></li>
+        <li className="nav-item"><a href="#projects">Projects</a></li>
+        <li className="nav-item"><a href="#about">About</a></li>
+        <li className="nav-item"><a href="#timeline" >Timeline</a></li>
+        <li className="nav-item"><a href="#testimonials">Testimonials</a></li>
+        <li className="nav-button"><a href="/images/Wicus (Willem Jacobus) Buys Developer Resume 2024.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
       </ul>
     </nav>
   );

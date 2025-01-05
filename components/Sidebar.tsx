@@ -6,9 +6,15 @@ import GithubIcon from '@/icons/github.svg';
 const Sidebar = () => {
   return (
     <div className='sidemenu'>
-        <MailIcon className='icon' />
-        <LinkedinIcon className='icon' />
-        <GithubIcon className='icon' />
+        <a href="mailto:wicusbuys@gmail.com?" target="_blank" rel="noopener noreferrer">
+          <MailIcon className='icon' />
+        </a>
+        <a href="https://www.linkedin.com/in/wicusbuys/" target="_blank" rel="noopener noreferrer">
+          <LinkedinIcon className='icon' />
+        </a>
+        <a href="https://github.com/Wicusbuys" target="_blank" rel="noopener noreferrer">
+          <GithubIcon className='icon' />
+        </a>
         <div className="flex sidebar"></div>
     </div>
   )

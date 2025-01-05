@@ -6,11 +6,11 @@ import Cover from "@/components/Cover";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
-import Work from "@/components/Projects";
 import About from "@/components/About";
 import Timeline from "@/components/TimeLine";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   const [showCover, setShowCover] = useState(true);
@@ -49,25 +49,25 @@ export default function Home() {
           )}
         </AnimatePresence>
       </section>
-      <section className={`section hero ${showCover ? "hidden" : "block"}`}>
-        <Hero/>
+      <section id="intro" className={`section hero ${showCover ? "hidden" : "block"}`}>
+          <Hero/>
       </section>
-      <section className="Work">
-        <Work />
+      <section id="projects" className="Projects">
+          <Projects />
       </section>
-      <section className="About">
+      <section id="about" className="About">
           <About/>
       </section>
-      <section className="Timeline">
-        <Timeline/>
+      <section id="timeline" className="Timeline">
+          <Timeline/>
       </section>
-      <section className="Testimonials w-full">
-        <Testimonials/>
+      <section id="testimonials" className="Testimonials w-full">
+          <Testimonials/>
       </section>
       <section>
-        <Footer/>
+          <Footer/>
       </section>
-        <Sidebar />
+          <Sidebar />
     </main>
   );
 }
