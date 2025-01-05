@@ -1,9 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const menuRef = useRef<HTMLUListElement | null>(null);
 
   const toggleMenu = () => {
+    if (menuRef.current) {
+      if (!isMenuVisible) {
+        const menuHeight = menuRef.current.scrollHeight;
+        menuRef.current.style.height = `${menuHeight}px`;
+      } else {
+        menuRef.current.style.height = "0";
+      }
+    }
     setIsMenuVisible((prevState) => !prevState);
   };
 
@@ -11,20 +20,20 @@ const Navbar = () => {
     const handleResize = () => {
       if (window.innerWidth >= 1024) {
         setIsMenuVisible(false);
+        if (menuRef.current) {
+          menuRef.current.style.height = "auto";
+        }
       }
     };
 
-    window.addEventListener('resize', handleResize);
-
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return (
-    <nav
-      className={`nav ${isMenuVisible ? 'mobile--nav--is--visible' : ''}`}
-    >
+    <nav className={`nav ${isMenuVisible ? "mobile--nav--is--visible" : ""}`}>
       <h1 className="nav-name">Wicus Buys</h1>
       <div className="nav-menu-icon" onClick={toggleMenu}>
         <div className="line">
@@ -34,7 +43,7 @@ const Navbar = () => {
           <div className="content"></div>
         </div>
       </div>
-      <ul className="nav-menu">
+      <ul className="nav-menu" ref={menuRef}>
         <li className="nav-item"><a>Intro</a></li>
         <li className="nav-item"><a>Projects</a></li>
         <li className="nav-item"><a>About</a></li>

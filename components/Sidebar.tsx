@@ -5,8 +5,8 @@ import GithubIcon from '@/icons/github.svg';
 
 const Sidebar = () => {
   return (
-    <div className='absolute bottom-0 left-20 flex flex-col w-auto'>
-        <MailIcon className='icon text-{#505050;}' />
+    <div className='sidemenu'>
+        <MailIcon className='icon' />
         <LinkedinIcon className='icon' />
         <GithubIcon className='icon' />
         <div className="flex sidebar"></div>

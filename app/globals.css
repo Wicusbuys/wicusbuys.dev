@@ -6,8 +6,18 @@ body {
   font-family: 'Roobert', sans-serif;
 }
 
+.options {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%; 
+}
+
 .option {
-  padding-right: 1rem;
+  white-space: nowrap;
+  padding-right: 0.8rem;
   font-size: clamp(1rem, 2vw, 1.5rem);
   color: #505050;
   cursor: pointer;
@@ -33,6 +43,10 @@ body {
 }
 
 @media screen and (min-width: 1024px){
+  .options {
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
   .option {
     padding-right: 2rem;
   }
@@ -48,7 +62,7 @@ body {
   align-items: center;
   min-height: 68px;
   position: fixed;
-  z-index: 20;
+  z-index: 30;
   top: 0px;
 }
 
@@ -137,10 +151,16 @@ body {
 }
 
 .nav-menu{
-  display: none;
+  display: flex;
+  flex-direction: column;
   color: white;
+  height: 0;
   width: 100%;
   margin-top: 2rem;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 .nav-item {
@@ -168,7 +188,9 @@ body {
 }
 
 .mobile--nav--is--visible .nav-menu {
-  display: block;
+  height: auto;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media screen and (min-width: 1024px) {
@@ -177,10 +199,13 @@ body {
   }
 
   .nav-menu{
-    display: flex;
+    flex-direction: row;
+    opacity: 1;
     width: auto;
     margin: 0;
+    max-height: 100%;
     height: auto;
+    transform: translateY(0);
   }
 
   .nav-item{
@@ -196,20 +221,65 @@ body {
 
 .icon {
   fill: #505050;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   cursor: pointer;
-  margin-bottom: 1rem;
 }
 
 .icon:hover {
   fill: #FFFFFF;
 }
 
+.sidemenu{
+  display: flex;
+  flex-direction: row-reverse;
+  width: auto;
+  position: relative;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
 .sidebar {
   bottom: auto;
-  width: 0.3rem;
-  height: 10rem;
+  width: 10rem;
+  height: 0.3rem;
   background: linear-gradient(to right, #4B23FF, #A100FF);
   margin: auto;
+}
+
+@media screen and (min-width: 1450px) {
+
+  .sidemenu{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    position: fixed;
+    bottom: 0;
+    left: 2.5rem;
+  }
+  
+  .sidebar {
+    bottom: auto;
+    width: 0.3rem;
+    height: 10rem;
+    background: linear-gradient(to right, #4B23FF, #A100FF);
+    margin: auto;
+  }
+
+  .icon {
+    fill: #505050;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+}
+
+@media screen and (min-width: 1600px) {
+
+  .sidemenu{
+    left: 6rem;
+  }
+  
 }

@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="hero h-screen w-full bg-black text-white flex flex-col items-center justify-center overflow-hidden animate-fadeIn_long max-w-7xl">
       <div className='flex flex-col overflow-hidden justify-center min-h-80 px-8'>
-        <ul className="options flex h-auto mb-4">
+        <ul className="options h-auto mb-4">
           <li
             className={`option anyone ${activeOption === 'anyone' ? 'is--active' : ''}`}
             onClick={() => setActiveOption('anyone')}
