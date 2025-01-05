@@ -19,4 +19,4 @@ This project was created to:
 
 ## Author
 
-This project was created by Wicus Buys, a software engineer dedicated to building impactful web applications and continuously learning new technologies.
+This project was created by Wicus Buys, a software engineer dedicated to building impactful applications and continuously learning new technologies.
