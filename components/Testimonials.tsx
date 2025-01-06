@@ -46,6 +46,16 @@ const Testimonials = () => {
           name: "Liesl van Zyl",
           title: "Payroll Support Team Lead, GreatSoft",
         },
+        {
+          quote:
+          `"I had and still have the pleasure of having Wicus Buys in my team for the last 9 months  at GreatSoft Pty Ltd and I can confidently 
+          say that he is an exceptional asset to my team. Wicus consistently demonstrates a high level of professionalism, dedication, and 
+          creativity. He takes initiative, communicates effectively with all clients telephonically and via email, and tackles challenges with 
+          a positive attitude. Wicus also has a natural ability to collaborate, making him a valued team member. I have no doubt that he will 
+          continue to excel in any future endeavors and highly recommend him for any position or project."`,
+          name: "Stephanie Frieslaar",
+          title: "Services Consultant Team Lead, GreatSoft",
+        },        
       ];
   return (
       <div className="h-[60rem] rounded-md flex flex-col antialiased bg-black bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
