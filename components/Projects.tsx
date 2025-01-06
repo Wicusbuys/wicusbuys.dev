@@ -31,7 +31,6 @@ const items = [
         height={600}
         className="w-full h-auto object-contain rounded-xl"
         quality={100}
-        layout="responsive"
       />
     ),
     link: "https://github.com/Wicusbuys/ContemporaryCarve-eCommerce_JsPHPXAMPP",
@@ -48,7 +47,6 @@ const items = [
         height={600}
         className="w-full h-auto object-contain rounded-xl"
         quality={100}
-        layout="responsive"
       />
     ),
     link: "https://wicusbuys.netlify.app/",
@@ -66,7 +64,6 @@ const items = [
         height={600}
         className="w-full h-auto object-contain rounded-xl"
         quality={100}
-        layout="responsive"
       />
     ),
     className: "md:col-span-1",
@@ -83,7 +80,6 @@ const items = [
         height={600}
         className="w-full h-auto object-contain rounded-xl"
         quality={100}
-        layout="responsive"
       />
     ),
     className: "md:col-span-2",
@@ -93,13 +89,12 @@ const items = [
     description: "Client management and information system.",
     header: (
       <Image
-        src="/images/coming_soon.png"
+        src="/images/coming_soon.webp"
         alt="Client Relationship Manager Placeholder"
         width={800}
         height={600}
         className="w-full h-auto object-contain rounded-xl"
         quality={100}
-        layout="responsive"
       />
     ),
     className: "md:col-span-3",

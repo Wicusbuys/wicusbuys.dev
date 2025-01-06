@@ -16,11 +16,12 @@ const Footer = () => {
             </div>
             <div className="mx-auto">
                 <Image
-                    src="/images/Portrait.png"
+                    src="/images/portrait.webp"
                     alt="GreatSoft Logo"
                     width={300}
                     height={300}
                     className="rounded-lg object-cover h-auto w-full"
+                    quality={100}
                 />
             </div>
         </div>

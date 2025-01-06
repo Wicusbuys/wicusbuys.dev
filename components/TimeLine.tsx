@@ -40,7 +40,6 @@ const TimeLine = () => {
                   height={500}
                   className="rounded-lg object-cover h-auto w-full"
                   quality={100}
-        layout="responsive"
                 />
             </a>
           </div>
@@ -81,7 +80,6 @@ const TimeLine = () => {
                   height={500}
                   className="rounded-lg object-cover h-auto w-full"
                   quality={100}
-                  layout="responsive"
                 />
             </a>
           </div>
@@ -120,7 +118,6 @@ const TimeLine = () => {
                   height={500}
                   className="rounded-lg object-cover h-auto w-full"
                   quality={100}
-                  layout="responsive"
                 />
             </a>
           </div>
