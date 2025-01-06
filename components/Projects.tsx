@@ -1,12 +1,12 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 
-const Work = () => {
+const Projects: React.FC = () => {
   return (
     <BentoGrid className="max-w-7xl mx-auto md:auto-rows-[auto]">
-      {items.map((item, i) => (
+      {items.map((item, index) => (
         <BentoGridItem
-          key={i}
+          key={index}
           title={item.title}
           description={item.description}
           header={item.header}
@@ -16,21 +16,21 @@ const Work = () => {
       ))}
     </BentoGrid>
   );
-}
+};
 
 const items = [
   {
     title: "Contemporary Carve",
-    description: "E-commerce website built with HTML, CSS, JS and PHP.",
+    description: "E-commerce website built with HTML, CSS, JS, and PHP.",
     header: (
       <img
         src="/images/contemporary_carve_1.png"
-        alt="Contemporary Carve"
+        alt="Contemporary Carve Screenshot"
         className="w-full h-auto object-contain rounded-xl"
       />
     ),
     link: "https://github.com/Wicusbuys/ContemporaryCarve-eCommerce_JsPHPXAMPP",
-    className: "md:col-span-2"
+    className: "md:col-span-2",
   },
   {
     title: "WicusBuys.com",
@@ -38,36 +38,38 @@ const items = [
     header: (
       <img
         src="/images/wicusbuys_1.png"
-        alt="Contemporary Carve"
+        alt="Portfolio Website Screenshot"
         className="w-full h-auto object-contain rounded-xl"
       />
     ),
     link: "https://wicusbuys.netlify.app/",
-    className: "md:col-span-1"
+    className: "md:col-span-1",
   },
   {
     title: "Galvatrack",
-    description: "Android application to track order process using Android Studio and Java.",
+    description:
+      "Android application to track order processes using Android Studio and Java.",
     header: (
       <img
         src="/images/gt_1.png"
-        alt="Contemporary Carve"
+        alt="Galvatrack Screenshot"
         className="w-full h-auto object-contain rounded-xl"
       />
     ),
-    className: "md:col-span-1"
+    className: "md:col-span-1",
   },
   {
     title: "Upcoming - SA ID Validator",
-    description: "Online site to validate SA ID's incorporating payment system for coffee.",
+    description:
+      "Online site to validate SA IDs incorporating a payment system for coffee.",
     header: (
       <img
         src="/images/coming_soon.png"
-        alt="Contemporary Carve"
+        alt="SA ID Validator Placeholder"
         className="w-full h-auto object-contain rounded-xl"
       />
     ),
-    className: "md:col-span-2"
+    className: "md:col-span-2",
   },
   {
     title: "Upcoming - Client Relationship Manager",
@@ -75,12 +77,12 @@ const items = [
     header: (
       <img
         src="/images/coming_soon.png"
-        alt="Contemporary Carve"
+        alt="Client Relationship Manager Placeholder"
         className="w-full h-auto object-contain rounded-xl"
       />
     ),
-    className: "md:col-span-3"
+    className: "md:col-span-3",
   },
 ];
 
-export default Work
+export default Projects;

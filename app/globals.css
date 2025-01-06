@@ -3,11 +3,7 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth !important;
-}
-
-body {
-  font-family: 'Roobert', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .options {
@@ -27,12 +23,8 @@ body {
   cursor: pointer;
 }
 
-.option:hover {
-  color: #ffffff;
-}
-
-.is--active {
-  color: #ffffff;
+.option:hover, .is-active {
+  color: white;
 }
 
 .text{
@@ -42,7 +34,7 @@ body {
   line-height: 1;
 }
 
-.is--visible{
+.is-visible{
   display: inherit;
 }
 

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -16,58 +16,68 @@ export default function Home() {
   const [showCover, setShowCover] = useState(true);
 
   useEffect(() => {
-    document.body.style.overflow = "hidden";
+    const disableScroll = () => (document.body.style.overflow = "hidden");
+    const enableScroll = () => (document.body.style.overflow = "auto");
+
+    disableScroll();
 
     const timeout = setTimeout(() => {
       setShowCover(false);
-      document.body.style.overflow = "auto";
+      enableScroll();
     }, 3000);
 
     return () => {
       clearTimeout(timeout);
-      document.body.style.overflow = "auto";
+      enableScroll();
     };
   }, []);
 
   return (
-    <main className="relative flex justify-center items-center flex-col mx-auto bg-black">
-      <header className="w-full">
-          <Navbar/>
-        </header>
-      <section className="section cover">
-        <AnimatePresence>
-          {showCover && (
-            <motion.section
-              className="fixed inset-0 z-50 flex items-center justify-center bg-black"
-              initial={{ opacity: 1 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 2 }}
-            >
-              <Cover />
-            </motion.section>
-          )}
-        </AnimatePresence>
-      </section>
-      <section id="intro" className={`section hero ${showCover ? "hidden" : "block"}`}>
-          <Hero/>
-      </section>
-      <section id="projects" className="Projects">
+    <>
+      <header className="w-full fixed top-0 z-40">
+        <Navbar />
+      </header>
+
+      <AnimatePresence>
+        {showCover && (
+          <motion.section
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black"
+            initial={{ opacity: 1 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 2 }}
+          >
+            <Cover />
+          </motion.section>
+        )}
+      </AnimatePresence>
+
+      <main
+        className={`relative mx-auto flex flex-col items-center justify-center bg-black ${
+          showCover ? "opacity-0 pointer-events-none" : "opacity-100"
+        } transition-opacity duration-500`}
+      >
+        <section id="intro" className="section hero">
+          <Hero />
+        </section>
+        <section id="projects" className="section projects">
           <Projects />
-      </section>
-      <section id="about" className="About">
-          <About/>
-      </section>
-      <section id="timeline" className="Timeline">
-          <Timeline/>
-      </section>
-      <section id="testimonials" className="Testimonials w-full">
-          <Testimonials/>
-      </section>
-      <section>
-          <Footer/>
-      </section>
-          <Sidebar />
-    </main>
+        </section>
+        <section id="about" className="section about">
+          <About />
+        </section>
+        <section id="timeline" className="section timeline">
+          <Timeline />
+        </section>
+        <section id="testimonials" className="section testimonials">
+          <Testimonials />
+        </section>
+        <section id="footer" className="section footer">
+          <Footer />
+        </section>
+      </main>
+
+      <Sidebar />
+    </>
   );
 }

@@ -48,7 +48,7 @@ export default {
       },
 
       fontFamily: {
-        roobert: ['Roobert', 'sans-serif'],
+        sans: ['Roobert', 'sans-serif'],
       },
 
     },

@@ -5,7 +5,7 @@ const Testimonials = () => {
     const testimonials = [
         {
           quote:`
-            \"I have had the pleasure of working with Wicus for +/- a year at GreatSoft, and in that time, I have been 
+            "I have had the pleasure of working with Wicus for +/- a year at GreatSoft, and in that time, I have been 
             consistently impressed by his dedication, expertise, and collaborative spirit. Wicus brings a unique 
             blend of creativity and strategic thinking to every project, always striving to deliver high-quality results. 
             His ability to tackle complex challenges with a positive attitude and innovative approach has been invaluable to our 
@@ -33,6 +33,18 @@ const Testimonials = () => {
           lasting positive impact on the GreatSoft Team."`,
           name: "Adrian Dunbar",
           title: "Head of Development and Director, GreatSoft Europe",
+        },
+        {
+          quote:
+          `"I would like to take a moment to recognize Wicus for his unwavering commitment, professionalism, and positive attitude. Over the 
+          time we have worked together, he has consistently demonstrated a strong work ethic and a dedication to mastering the software we 
+          support. His enthusiasm for learning and improving his skills has been truly admirable.Wicus always goes above and beyond, not only 
+          in tackling complex tasks but also in making time to assist his colleagues, offering guidance and support whenever needed. His helpful 
+          nature fosters a collaborative and productive work environment.In addition to his technical expertise, Wicus is a person who brings a 
+          sense of joy to the workplace. He is always up for a good laugh and has a natural ability to lighten the mood, making it a pleasure to 
+          work alongside him.It is truly a privilege to work with someone as dedicated and positive as Wicus."`,
+          name: "Liesl van Zyl",
+          title: "Payroll Support Team Lead, GreatSoft",
         },
       ];
   return (
