@@ -26,19 +26,21 @@ const TimeLine = () => {
           organizational success.
           </p>
           <p className="text-secondary-light mb-8">
-          Through my contributions, I've honed a problem-solving mindset and a keen eye for detail, striving 
-          to deliver solutions that are both reliable and impactful. Along the way, I’ve been honored to be 
+          Through my contributions, I&apos;ve honed a problem-solving mindset and a keen eye for detail, striving 
+          to deliver solutions that are both reliable and impactful. Along the way, I&apos;ve been honored to be 
           recognized by my peers as MVP and nominated for the Customer Satisfaction Award—acknowledgments that 
           reflect my commitment to excellence and the value I aim to bring to every interaction.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <a href="https://greatsoft.co.za/" target="_blank" rel="noopener noreferrer">
               <Image
-                  src="/images/GS.png"
+                  src="/images/GS.webp"
                   alt="GreatSoft Logo"
                   width={500}
                   height={500}
                   className="rounded-lg object-cover h-auto w-full"
+                  quality={100}
+        layout="responsive"
                 />
             </a>
           </div>
@@ -73,11 +75,13 @@ const TimeLine = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <a href="/images/WJ_Buys_BSc_Cert.png" target="_blank" rel="noopener noreferrer">
               <Image
-                  src="/images/WJ_Buys_BSc_Cert.png"
+                  src="/images/WJ_Buys_BSc_Cert.webp"
                   alt="GreatSoft Logo"
                   width={500}
                   height={500}
                   className="rounded-lg object-cover h-auto w-full"
+                  quality={100}
+                  layout="responsive"
                 />
             </a>
           </div>
@@ -110,11 +114,13 @@ const TimeLine = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <a href="/images/WJ_Buys_HCert_Cert.png" target="_blank" rel="noopener noreferrer">
               <Image
-                  src="/images/WJ_Buys_HCert_Cert.png"
+                  src="/images/WJ_Buys_HCert_Cert.webp"
                   alt="GreatSoft Logo"
                   width={500}
                   height={500}
                   className="rounded-lg object-cover h-auto w-full"
+                  quality={100}
+                  layout="responsive"
                 />
             </a>
           </div>

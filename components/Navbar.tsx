@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {
@@ -34,7 +35,7 @@ const Navbar = () => {
 
   return (
     <nav className={`nav ${isMenuVisible ? "mobile--nav--is--visible" : ""}`}>
-      <a href="/" className="nav-name">Wicus Buys</a>
+      <Link href="/" className="nav-name">Wicus Buys </Link>
       <div className="nav-menu-icon" onClick={toggleMenu}>
         <div className="line">
           <div className="content"></div>

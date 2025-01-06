@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 
 const Projects: React.FC = () => {
@@ -23,10 +24,14 @@ const items = [
     title: "Contemporary Carve",
     description: "E-commerce website built with HTML, CSS, JS, and PHP.",
     header: (
-      <img
-        src="/images/contemporary_carve_1.png"
+      <Image
+        src="/images/contemporary_carve_1.webp"
         alt="Contemporary Carve Screenshot"
+        width={800}
+        height={600}
         className="w-full h-auto object-contain rounded-xl"
+        quality={100}
+        layout="responsive"
       />
     ),
     link: "https://github.com/Wicusbuys/ContemporaryCarve-eCommerce_JsPHPXAMPP",
@@ -36,10 +41,14 @@ const items = [
     title: "WicusBuys.com",
     description: "My first portfolio website using HTML and CSS.",
     header: (
-      <img
-        src="/images/wicusbuys_1.png"
+      <Image
+        src="/images/wicusbuys_1.webp"
         alt="Portfolio Website Screenshot"
+        width={800}
+        height={600}
         className="w-full h-auto object-contain rounded-xl"
+        quality={100}
+        layout="responsive"
       />
     ),
     link: "https://wicusbuys.netlify.app/",
@@ -50,10 +59,14 @@ const items = [
     description:
       "Android application to track order processes using Android Studio and Java.",
     header: (
-      <img
-        src="/images/gt_1.png"
+      <Image
+        src="/images/gt_1.webp"
         alt="Galvatrack Screenshot"
+        width={800}
+        height={600}
         className="w-full h-auto object-contain rounded-xl"
+        quality={100}
+        layout="responsive"
       />
     ),
     className: "md:col-span-1",
@@ -63,10 +76,14 @@ const items = [
     description:
       "Online site to validate SA IDs incorporating a payment system for coffee.",
     header: (
-      <img
-        src="/images/coming_soon.png"
+      <Image
+        src="/images/coming_soon.webp"
         alt="SA ID Validator Placeholder"
+        width={800}
+        height={600}
         className="w-full h-auto object-contain rounded-xl"
+        quality={100}
+        layout="responsive"
       />
     ),
     className: "md:col-span-2",
@@ -75,10 +92,14 @@ const items = [
     title: "Upcoming - Client Relationship Manager",
     description: "Client management and information system.",
     header: (
-      <img
+      <Image
         src="/images/coming_soon.png"
         alt="Client Relationship Manager Placeholder"
+        width={800}
+        height={600}
         className="w-full h-auto object-contain rounded-xl"
+        quality={100}
+        layout="responsive"
       />
     ),
     className: "md:col-span-3",

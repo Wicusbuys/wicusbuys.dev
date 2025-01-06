@@ -69,15 +69,14 @@ export default function Home() {
         <section id="timeline" className="section timeline">
           <Timeline />
         </section>
-        <section id="testimonials" className="section testimonials">
+        <section id="testimonials" className="section testimonials w-full">
           <Testimonials />
         </section>
         <section id="footer" className="section footer">
           <Footer />
         </section>
+        <Sidebar />
       </main>
-
-      <Sidebar />
     </>
   );
 }
