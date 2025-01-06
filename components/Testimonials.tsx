@@ -55,6 +55,17 @@ const Testimonials = () => {
           continue to excel in any future endeavors and highly recommend him for any position or project."`,
           name: "Stephanie Frieslaar",
           title: "Services Consultant Team Lead, GreatSoft",
+        },
+        {
+          quote:
+          `"I have had the pleasure of working closely with Wicus from March 2024 to date and because we started at the Company the same time we 
+          could always relate to one another. Wicus is an exceptional professional that always demonstrate remarkable work ethic and one of the 
+          things that stands out the most for me is the ability to adapt and learn new things but also always wanting and willing to reach out 
+          and assist wherever possible. Beyond his professional competence, Wicus is a joy to work with, always lightning the mood and putting 
+          a smile on everyone's face even under the most pressured times. He naturally inspires and motivates others, always fostering a positive 
+          and productive work environment"`,
+          name: "Uthmaan Isaacs",
+          title: "Junior Offsite Consultant, GreatSoft",
         },        
       ];
   return (
