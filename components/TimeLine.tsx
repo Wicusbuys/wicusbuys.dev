@@ -72,7 +72,7 @@ const TimeLine = () => {
           project I work on.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <a href="/images/WJ_Buys_BSc_Cert.png" target="_blank" rel="noopener noreferrer">
+            <a href="/images/WJ_Buys_BSc_Cert.webp" target="_blank" rel="noopener noreferrer">
               <Image
                   src="/images/WJ_Buys_BSc_Cert.webp"
                   alt="GreatSoft Logo"
@@ -110,7 +110,7 @@ const TimeLine = () => {
           My hard work paid off as I graduated Magna Cum Laude, a testament to my commitment and passion for software development.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <a href="/images/WJ_Buys_HCert_Cert.png" target="_blank" rel="noopener noreferrer">
+            <a href="/images/WJ_Buys_HCert_Cert.webp" target="_blank" rel="noopener noreferrer">
               <Image
                   src="/images/WJ_Buys_HCert_Cert.webp"
                   alt="GreatSoft Logo"
