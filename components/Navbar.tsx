@@ -24,6 +24,10 @@ const Navbar = () => {
         if (menuRef.current) {
           menuRef.current.style.height = "auto";
         }
+      } else {
+        if (menuRef.current) {
+          menuRef.current.style.height = "0";
+        }
       }
     };
 

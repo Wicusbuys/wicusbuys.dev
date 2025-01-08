@@ -152,11 +152,10 @@ html {
   color: white;
   height: 0;
   width: 100%;
-  margin-top: 2rem;
   overflow: hidden;
   opacity: 0;
   transform: translateY(-20px);
-  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 .nav-item {
@@ -185,6 +184,7 @@ html {
 
 .mobile--nav--is--visible .nav-menu {
   height: auto;
+  margin-top: 2rem;
   opacity: 1;
   transform: translateY(0);
 }
