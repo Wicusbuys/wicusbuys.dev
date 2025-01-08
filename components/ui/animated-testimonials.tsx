@@ -50,7 +50,7 @@ export const AnimatedTestimonials = ({
       <div className="relative grid grid-cols-1">
         <div className="flex justify-between flex-col">
           <div
-            className="relative flex items-center justify-center"
+            className="relative flex items-end justify-center"
             ref={containerRef}
             style={{ height: maxHeight }}
           >
