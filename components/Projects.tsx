@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import { link } from "fs";
 
 const Projects: React.FC = () => {
   return (
@@ -69,19 +70,20 @@ const items = [
     className: "md:col-span-1",
   },
   {
-    title: "Upcoming - SA ID Validator",
+    title: "SAIDCheckr",
     description:
-      "Online site to validate SA IDs incorporating a payment system for coffee.",
+      "Online site to validate SA IDs using Luhn's Algorithm",
     header: (
       <Image
-        src="/images/coming_soon.webp"
-        alt="SA ID Validator Placeholder"
+        src="/images/SAIDCheckr.webp"
+        alt="SA ID Validator"
         width={800}
         height={600}
         className="w-full h-auto object-contain rounded-xl"
         quality={100}
       />
     ),
+    link: "https://saidcheckr-co-za.vercel.app/",
     className: "md:col-span-2",
   },
   {
