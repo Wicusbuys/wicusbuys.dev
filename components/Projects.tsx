@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
-import { link } from "fs";
 
 const Projects: React.FC = () => {
   return (

@@ -34,16 +34,16 @@ const Hero = () => {
         </ul>
         <div className="texts">
           <h1 className={`text anyone ${activeOption === 'anyone' ? 'is-visible' : ''}`}>
-            I'm a software engineer who’s passionate about solving problems and building thoughtful, reliable solutions.
+            I&apos;m a software engineer who&apos;s passionate about solving problems and building thoughtful, reliable solutions.
           </h1>
           <h1 className={`text recruiter ${activeOption === 'recruiter' ? 'is-visible' : ''}`}>
-            I’m a detail-oriented engineer driven to deliver polished results and thrive on learning new technologies.
+            I&apos;m a detail-oriented engineer driven to deliver polished results and thrive on learning new technologies.
           </h1>
           <h1 className={`text manager ${activeOption === 'manager' ? 'is-visible' : ''}`}>
-          I’m committed to excellence and collaboration, delivering reliable, high-quality software through precise solutions.
+          I&apos;m committed to excellence and collaboration, delivering reliable, high-quality software through precise solutions.
           </h1>
           <h1 className={`text developer ${activeOption === 'developer' ? 'is-visible' : ''}`}>
-          I’m a curious developer who values collaboration, sharing knowledge, clean code and crafting intuitive, effective tools.
+          I&apos;m a curious developer who values collaboration, sharing knowledge, clean code and crafting intuitive, effective tools.
           </h1>
         </div>
       </div>
